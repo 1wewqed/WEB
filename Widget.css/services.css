@@ -1,0 +1,35 @@
+/* Định dạng danh sách dịch vụ */
+.widget-services__list {
+    border: 1px solid var(--color_border);
+    border-radius: 6px;
+    padding: 1.3rem;
+}
+
+/* Khoảng cách giữa các mục dịch vụ */
+.widget-services__list .item:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+/* Ảnh icon của dịch vụ */
+.widget-services__list .item-image {
+    flex: 0 0 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.9375rem;
+    max-width: 2.5rem;
+}
+
+/* Tiêu đề của dịch vụ */
+.widget-services__list .item-right__title {
+    color: var(--color_body);
+    font-size: 0.98125rem;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+/* Mô tả dịch vụ */
+.widget-services__list .item-right__description {
+    color: #868e96;
+    font-size: 0.85rem;
+    line-height: 20px;
+}

@@ -1,0 +1,125 @@
+/* Hiển thị ngày tháng */
+.date_item {
+    position: relative;
+}
+.date_item:after {
+    background: var(--color_border);
+    content: "";
+    height: 10px;
+    position: absolute;
+    right: -10px;
+    top: 3px;
+    width: 1px;
+}
+
+/* Cấu trúc bài đăng */
+.post_standing {
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.post_standing:not(:last-child) {
+    border-bottom: 1px solid var(--color_border);
+}
+.post_standing:first-child {
+    padding-top: 0;
+}
+.post_standing:last-child {
+    padding-bottom: 0;
+}
+
+/* Nội dung bài đăng */
+.post_standing__content, .post_standing__img {
+    width: 100%;
+}
+.post_standing__img a {
+    display: block;
+    line-height: 0;
+}
+
+/* Các bài đăng mới */
+.post-new {
+    margin-top: 20px;
+}
+.post-new h2 {
+    margin-bottom: 20px;
+}
+.post-new .post_standing__content {
+    max-width: calc(100% - 220px);
+    padding-right: 20px;
+}
+.post-new .post_standing__img {
+    max-width: 200px;
+}
+
+/* Phần hiển thị tin nổi bật */
+.post-pin__top {
+    flex: 0 0 65%;
+    max-width: 65%;
+    padding: 0 1rem 0 0;
+}
+
+.post-pin__top a .thumbnail {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+
+.post-pin__top a .thumbnail img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.post-pin__top a .info-title {
+    color: var(--color_text_header);
+    font-size: 19px;
+    margin: 0 0 10px;
+}
+
+.post-pin__top a .info-title:hover {
+    color: var(--color_text_header_hover);
+}
+
+/* Bố cục cho phần bài viết có hình ảnh bên trái */
+.post-image__left .item {
+    align-items: inherit;
+}
+
+.post-image__left .item-img {
+    flex: 0 0 50%;
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    line-height: 0;
+    border-radius: 12px 0 0 12px;
+}
+
+.post-image__left .item-img__link img {
+    width: 100%;
+    max-height: 400px;
+}
+
+.post-image__left .item-content {
+    background: #f4f4f4;
+    border-radius: 0 12px 12px 0;
+    padding: 1.5rem;
+}
+
+.post-image__left .item-content .title_box {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.post-image__left .item-content .btn {
+    background: #bdbaba;
+    border-radius: 20px;
+    color: #fff;
+    padding: 5px 15px;
+}
+
+.post-image__left .item-content .btn:hover {
+    background: var(--background_button_hover);
+}

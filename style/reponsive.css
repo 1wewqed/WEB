@@ -1,0 +1,27 @@
+/* Responsive cho màn hình nhỏ hơn 767px */
+@media (max-width: 767px) {
+    .banner-list__item .wrap .content-wrap {
+        max-width: 100%;
+        width: 100%;
+    }
+    .banner-list__item .wrap .content-wrap__title {
+        font-size: 1.1rem;
+        margin-bottom: 0.45rem;
+    }
+    .banner-list__item .wrap .content-wrap__description {
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden;
+    }
+}
+
+/* Responsive cho màn hình nhỏ hơn 479px */
+@media (max-width: 479px) {
+    .box-with__form .items .item {
+        flex: 0 0 100% !important;
+    }
+    .box-list__items.mobile.type-4 .box {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+    }
+}

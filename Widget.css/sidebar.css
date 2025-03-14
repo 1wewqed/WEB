@@ -1,0 +1,14 @@
+.sidebar .widget-title {
+    font-size: 1.4rem;
+    padding-bottom: 0.6rem;
+    position: relative;
+}
+.sidebar .widget-title:before {
+    background-color: var(--background_button);
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 100px;
+}

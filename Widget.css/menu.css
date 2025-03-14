@@ -1,0 +1,32 @@
+/* ===== MENU WIDGET ===== */
+/* Cấu trúc menu của widget */
+.widget-menu__list .menu-item:not(:last-child) {
+    margin-bottom: 0.625rem;
+}
+.widget-menu__list .menu-item__title {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    line-height: 24px;
+    width: 100%;
+}
+.widget-menu__list .menu-item__title a {
+    color: var(--color_text_accent);
+    max-width: calc(100% - 35px);
+}
+.widget-menu__list .menu-item__title a:hover {
+    color: var(--color_main);
+}
+.widget-menu__list .menu-item__title span {
+    cursor: pointer;
+    flex: 0 0 35px;
+    text-align: center;
+    width: 35px;
+}
+.widget-menu__list .menu-item .submenu {
+    display: none;
+    padding-left: 10px;
+}
+.widget-menu__list .menu-item .submenu_item {
+    padding: 5px 0;
+}

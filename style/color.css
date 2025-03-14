@@ -1,0 +1,6 @@
+.color-main { color: var(--color_main); }
+.white { color: #fff; }
+.black { color: #000; }
+.color_head { color: var(--color_text_header); }
+.color_title { color: var(--color_text_accent); }
+.color_desc { color: var(--color_text_desc); }

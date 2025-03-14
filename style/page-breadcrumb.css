@@ -1,0 +1,39 @@
+.page-breadcrumb {
+    padding-top: 30px;
+}
+.page-breadcrumb ul {
+    display: inline;
+    padding-left: 0;
+}
+.page-breadcrumb ul li {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+}
+.page-breadcrumb ul li:before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -16px;
+    width: 6px;
+    height: 6px;
+    border: solid var(--color_body);
+    border-width: 0 1px 1px 0;
+    transform: rotate(-45deg);
+}
+.page-breadcrumb ul li a {
+    color: var(--color_body);
+    transition: .3s;
+}
+.page-breadcrumb ul li a:hover {
+    color: var(--color_main);
+}
+.page-breadcrumb ul li:first-child:before {
+    display: none;
+}
+.page-breadcrumb ul li:last-child {
+    margin-right: 0;
+}
+.page-breadcrumb ul li:last-child span {
+    opacity: .6;
+}

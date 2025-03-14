@@ -1,0 +1,19 @@
+.slides {
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa các item */
+    overflow: hidden; /* Ẩn phần nội dung bị tràn */
+    width: 100%; /* Đảm bảo slide chiếm toàn bộ chiều rộng */
+  }
+  
+  .item {
+    flex: 0 0 auto; /* Không co giãn, giữ nguyên kích thước */
+    width: 187.5px; /* Độ rộng cố định */
+    text-align: center; /* Căn giữa ảnh */
+  }
+  
+  .item img {
+    display: block; /* Đảm bảo ảnh không bị ảnh hưởng bởi inline space */
+    width: 150px;
+    height: 100px;
+  }
+  

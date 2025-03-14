@@ -1,0 +1,109 @@
+/* Phần danh sách bài viết */
+.short-post-9 .post-list .item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 1.5rem;
+}
+
+.short-post-9 .post-list .item-img img {
+    max-height: 246px;
+    width: 100%;
+}
+
+.short-post-9 .post-list .item-content {
+    padding: 20px 30px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.short-post-9 .post-list .item-content__title {
+    color: var(--color_text_header);
+    font-size: 20px;
+    line-height: 31px;
+    padding-bottom: 55px;
+}
+
+.short-post-9 .post-list .item-content__desc {
+    color: var(--color_body);
+    font-size: 16px;
+    padding-bottom: 60px;
+}
+
+.short-post-9 .post-list .item:hover {
+    background: var(--color_text_header);
+}
+
+.short-post-9 .post-list .item:hover h3,
+.short-post-9 .post-list .item:hover p {
+    color: #fff;
+}
+
+.short-post-9 .post-list .item:hover span {
+    background: #fff;
+}
+
+.short-post-9 .post-list .item:hover span svg {
+    fill: #203f5d;
+}
+
+/* Khi hover vào danh sách tin tức bên phải */
+.short-post-10 .hotnews-right__list ul li:hover a {
+    color: var(--color_main);
+}
+
+/* Hình ảnh của tin tức nổi bật */
+.short-post-10 .hotnews-item__img {
+    display: block;
+    line-height: 0;
+}
+
+.short-post-10 .hotnews-item__img img {
+    max-height: 290px;
+    width: 100%;
+}
+
+/* Tiêu đề tin tức nổi bật */
+.short-post-10 .hotnews-item__title {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    font-family: inherit;
+    height: auto;
+    overflow: hidden;
+    padding: 5px 0;
+}
+
+.short-post-10 .hotnews-item__title a {
+    color: var(--color_main);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+/* Ngày đăng tin tức */
+.short-post-10 .hotnews-item__date {
+    color: #989898;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.short-post-10 .hotnews-item__date svg {
+    fill: #989898;
+    height: 14px;
+}
+
+/* Nội dung tin tức ngắn */
+.short-post-10 .hotnews-item__content {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    color: var(--color_body);
+    display: -webkit-box;
+    font-size: 14px;
+    height: auto;
+    line-height: 145%;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: hidden;
+    text-align: justify;
+}

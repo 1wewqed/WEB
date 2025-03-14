@@ -1,0 +1,91 @@
+/* Định dạng chung cho form */
+.form-custom {
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Thiết lập layout cho phiên bản web */
+.form-custom.web .content-row {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.form-custom.web .content-row .content-item {
+    flex: 1;
+}
+
+/* Điều chỉnh layout form */
+.form-custom.web .form-flex {
+    gap: 2.5rem;
+}
+
+.form-custom.web .form-flex.form-left {
+    flex-direction: row-reverse;
+}
+
+/* Kích thước hình ảnh */
+.form-custom.web .form-flex .thumbnail img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* Hiệu ứng khi hover các mạng xã hội */
+.form-custom .form-flex .contact-content__info .info_social__list .social_item:hover {
+    border: none;
+    transform: translate3d(0, -5px, 0);
+}
+
+/* Màu nền khi hover các mạng xã hội */
+.form-custom .form-flex .contact-content__info .info_social__list .social_item.facebook:hover {
+    background: #1f82ec;
+    box-shadow: 0 5px 15px #1f82ec;
+}
+
+.form-custom .form-flex .contact-content__info .info_social__list .social_item.twitter:hover {
+    background: #13b9ee;
+    box-shadow: 0 5px 15px #13b9ee;
+}
+
+/* Kiểu chữ chung */
+#single-content h1,
+#single-content h2,
+#single-content h3,
+#single-content h4,
+#single-content h5 {
+    color: var(--color_text_accent);
+    font-family: var(--font_family), sans-serif;
+}
+
+/* Điều chỉnh header */
+.header-wraper {
+    background-color: #fff !important;
+}
+
+.header .header-right__menu .menu_level1 {
+    padding: 25px 8px !important;
+}
+
+.header.header-desktop > .container {
+    margin: 5px auto !important;
+}
+
+/* Điều chỉnh footer */
+.footer-widget {
+    max-width: 100% !important;
+}
+
+.footer-widget .widget .widget-content p {
+    text-align: justify;
+}
+
+/* Biến CSS để quản lý màu sắc và kiểu chữ */
+:root {
+    --font_family: Arial;
+    --color_main: #1b72a7;
+    --color_menu: #212529;
+    --color_text_accent: #1b72a7;
+    --background_button: #1b72a7;
+    --background_footer: #1b72a7;
+}

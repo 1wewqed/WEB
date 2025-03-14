@@ -1,0 +1,92 @@
+/* Khu vực nội dung đặc biệt trên trang chủ */
+.home-special__content {
+    margin-top: 20px; /* Tạo khoảng cách phía trên */
+}
+
+/* Điều chỉnh khoảng cách và kích thước của phần tử .special trên màn hình lớn */
+.home-special__content:not(.mobile) .special {
+    margin-right: 40px; /* Khoảng cách giữa các phần tử */
+    width: calc(25% - 30px); /* Mỗi phần tử chiếm 25% chiều rộng, trừ khoảng cách */
+}
+
+/* Định dạng hình ảnh trong phần tử .special trên màn hình lớn */
+.home-special__content:not(.mobile) .special img {
+    height: 175px !important;
+    max-height: 175px;
+    width: 100%;
+}
+
+/* Định dạng hình ảnh trong phần tử .special trên thiết bị di động */
+.home-special__content.mobile .special img {
+    height: 250px !important;
+    max-height: 250px;
+    width: 100%;
+}
+
+/* Cấu trúc chung của phần tử .special */
+.home-special__content .special {
+    margin-bottom: 30px; /* Tạo khoảng cách giữa các phần tử */
+    position: relative; /* Định vị tương đối */
+}
+
+/* Điều chỉnh khoảng cách cho phần tử cuối cùng trong hàng */
+.home-special__content .special:last-child,
+.home-special__content .special:nth-child(4n) {
+    margin-right: 0; /* Xóa khoảng cách bên phải của phần tử cuối cùng trong hàng */
+}
+
+/* Khu vực hình ảnh trong phần tử .special */
+.home-special__content .special-img {
+    position: relative;
+}
+
+/* Hiệu ứng khi rê chuột vào hình ảnh */
+.home-special__content .special-img .img_link {
+    border-radius: 12px; /* Bo góc hình ảnh */
+    display: block;
+    line-height: 0;
+    overflow: hidden; /* Ẩn phần nội dung bị tràn */
+}
+
+/* Hiệu ứng mờ khi rê chuột vào hình ảnh */
+.home-special__content .special-img .img_link:before {
+    background-color: rgba(0, 0, 0, 0.25); /* Tạo lớp phủ màu đen mờ */
+    border-radius: 12px;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1); /* Hiệu ứng mượt mà */
+    width: 100%;
+    will-change: opacity;
+}
+
+/* Nhãn danh mục xuất hiện trên hình ảnh */
+.home-special__content .special-img .category {
+    background: #fff;
+    border-radius: 2.5rem; /* Bo tròn nền danh mục */
+    color: var(--color_body);
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    gap: 2px;
+    left: 0.9375rem; /* Định vị từ lề trái */
+    padding: 0.25rem 0.625rem;
+    position: absolute;
+    top: 0.9375rem; /* Định vị từ lề trên */
+}
+
+/* Hiển thị ngày tháng của nội dung đặc biệt */
+.home-special__content .special .date {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem; /* Khoảng cách phía dưới ngày tháng */
+}
+
+/* Hiệu ứng khi di chuột vào phần tử .special */
+.home-special__content .special:hover {
+    /* Bạn có thể thêm hiệu ứng hover tại đây nếu cần */
+}

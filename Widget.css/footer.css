@@ -1,0 +1,11 @@
+.footer-widget {
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.footer-widget .widget-title {
+    color: var(--color_title_footer);
+}
+.footer-widget .widget-content a:hover {
+    color: currentColor;
+    opacity: 0.8;
+}

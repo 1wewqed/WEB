@@ -1,0 +1,47 @@
+/* Thông báo giỏ hàng */
+.notice-cart__message {
+    background: #12b886;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    font-size: .875rem;
+    margin: 0;
+    padding: 1rem 3rem 1rem 1rem;
+    position: relative;
+}
+
+.notice-cart__message a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.notice-cart__message a:hover {
+    color: #fff;
+}
+
+.notice-cart__message p {
+    color: #fff;
+    font-size: .875rem;
+    margin-bottom: 0;
+}
+
+.notice-cart__message p span {
+    color: #fff;
+    font-size: .875rem;
+    font-weight: 700;
+}
+
+.notice-cart__message .close {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+/* Responsive cho màn hình nhỏ hơn 575px */
+@media only screen and (max-width: 575px) {
+    .notice-cart {
+        max-width: calc(100vw - 30px);
+    }
+}

@@ -1,0 +1,8 @@
+/* ===== RESPONSIVE ===== */
+/* Điều chỉnh hiển thị trên màn hình nhỏ */
+@media only screen and (max-width: 768px) {
+    .footer-widget,
+    .sidebar {
+        margin-top: 1.5rem;
+    }
+}

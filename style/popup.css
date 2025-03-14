@@ -1,0 +1,76 @@
+/* Popup */
+.popup {
+    background: #fff;
+    left: 50%;
+    max-width: 500px;
+    opacity: 0;
+    padding: 40px 53px 54px 48px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .5s;
+    visibility: hidden;
+    width: 100%;
+    z-index: 11;
+}
+
+.popup.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-close {
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+.popup-title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 29px;
+    text-align: center;
+}
+
+/* Nhóm form trong popup */
+.popup .form-group {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.popup .form-group label {
+    display: flex;
+    justify-content: space-between;
+    line-height: 24px;
+    margin-bottom: 7px;
+    width: 100%;
+}
+
+.popup .form-group input[type=text] {
+    border: 1px solid var(--color_border);
+    border-radius: 4px;
+    font-family: var(--font_family);
+    font-size: 14px;
+    height: 40px;
+    padding: 0 15px;
+    padding-right: 40px !important;
+    width: 100%;
+}
+
+.popup .form-group .btn_register {
+    background: var(--background_button);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-family: var(--font_family);
+    font-size: 16px;
+    height: 40px;
+    width: 100%;
+}
